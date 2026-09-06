@@ -1,7 +1,7 @@
 export const business = {
  name: 'Jai Bhavani Plywood & Hardware', phone: '+91 99669 62582', tel: '+919966962582',
  address: 'Plot No. 16, Libra Enclave, toward Nadergul Main Road, near Ruchi Restaurants, Badangpet / Dawoodkhanguda, Telangana 500112',
- rating: 4.6, reviewCount: 183, website: 'https://jai-bhavani-materials-demo.silly-duck-4551.chatgpt.site',
+ rating: 4.6, reviewCount: 183, website: 'https://jai-bhavani-materials-demo.mosinzhb32.chatgpt.site',
  mapsEmbedUrl: '', googleProfileUrl: '', whatsapp: '', email: '', enquiryEndpoint: '', demo: true,
  brands: '[Confirm plywood brands]', delivery: '[Confirm delivery availability and service area.]', bulk: '[Confirm contractor and bulk-order policy.]', story: '[Add verified year founded, owner story and business background.]',
  hours: [{days:'Monday–Saturday',time:'8:00 AM–8:00 PM'},{days:'Sunday',time:'8:00 AM–2:00 PM'}]
@@ -28,3 +28,4 @@ export const faqs = [
  {group:'Products',q:'Which plywood brands do you stock?',a:business.brands},
  {group:'Contractor Requirements',q:'Do you handle contractor or bulk requirements?',a:business.bulk}
 ];
+
