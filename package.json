@@ -6,9 +6,10 @@
     "node": ">=22.13.0"
   },
   "scripts": {
-    "dev": "vinext dev",
-    "build": "vinext build",
-    "start": "wrangler dev --config dist/server/wrangler.json",
+    "dev": "node node_modules/vinext/dist/cli.js dev",
+    "build": "node node_modules/vinext/dist/cli.js build",
+    "start": "node node_modules/wrangler/bin/wrangler.js dev --config dist/server/wrangler.json",
+    "deploy": "npm run build && node node_modules/wrangler/bin/wrangler.js deploy --config dist/server/wrangler.json",
     "lint": "oxlint",
     "format": "oxfmt"
   },
