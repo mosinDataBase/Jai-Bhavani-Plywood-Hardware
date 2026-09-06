@@ -1,0 +1,5 @@
+import {Shell,ProductCard,SectionHeader} from '@/components/site';
+import {products} from '@/lib/business';
+import Link from 'next/link';
+export const metadata={title:'Products | Jai Bhavani Plywood & Hardware',description:'Enquire about plywood, boards, furniture hardware and finishing materials in Badangpet. Confirm stock and specifications directly.'};
+export default function Page(){return <Shell><section className="wrap page-intro"><div className="eyebrow">EXPLORE THE MATERIALS</div><h1>Materials for Furniture,<br/>Interiors & Project Requirements</h1><p>Use these categories as a guide for your enquiry. Photographs are illustrative; confirm products, brands, specifications and current stock directly with the store.</p></section><section className="wrap section catalog"><div className="product-grid">{products.map((p,i)=><ProductCard key={p.name} product={p} index={i} detail/>)}</div><div className="inline-cta"><h2>Can’t find what you need?</h2><p>Tell us your requirement and we’ll take the next step from there.</p><Link className="btn" href="/contact#enquiry">Ask About a Product</Link></div></section></Shell>}

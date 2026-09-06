@@ -1,0 +1,5 @@
+import {Shell,Hero,ProductSection} from '@/components/site';
+import {Trust,Audience,AboutPreview,Process,GalleryPreview,Reviews,Location,FAQPreview} from '@/components/sections';
+import {business} from '@/lib/business';
+const schema={'@context':'https://schema.org','@type':'LocalBusiness',name:business.name,telephone:business.tel,url:business.website,address:{'@type':'PostalAddress',streetAddress:'Plot No. 16, Libra Enclave, toward Nadergul Main Road, near Ruchi Restaurants',addressLocality:'Badangpet / Dawoodkhanguda',addressRegion:'Telangana',postalCode:'500112',addressCountry:'IN'},openingHoursSpecification:[{'@type':'OpeningHoursSpecification',dayOfWeek:['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],opens:'08:00',closes:'20:00'},{'@type':'OpeningHoursSpecification',dayOfWeek:'Sunday',opens:'08:00',closes:'14:00'}]};
+export default function Home(){return <Shell><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema)}}/><Hero/><ProductSection/><Trust/><Audience/><AboutPreview/><Process/><GalleryPreview/><Reviews/><Location/><FAQPreview/></Shell>}
